@@ -18,6 +18,7 @@ fn main() {
     for offset in 0..8 {
         joinhandles.push(thread::spawn(move || {
             let mut i = offset;
+            let child_numbers = &i;
             let mut sum = 0;
             while i < child_numbers.len() {
                 sum += child_numbers[i];
