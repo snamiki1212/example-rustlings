@@ -11,6 +11,7 @@
 
 fn vec_loop(mut v: Vec<i32>) -> Vec<i32> {
     for i in v.iter_mut() {
+        *i *= 2
         // TODO: Fill this up so that each element in the Vec `v` is
         // multiplied by 2.
     }
